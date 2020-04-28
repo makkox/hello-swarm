@@ -1,4 +1,4 @@
-FROM localhost:5000/centos:7
+FROM centos:7
 ENV JAVA_OPTIONS -Xmx512m
 
 RUN yum install -y --noplugins java-1.8.0-openjdk-headless && \
