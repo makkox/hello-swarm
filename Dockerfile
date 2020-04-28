@@ -9,7 +9,7 @@ ADD hello-swarm.jar /opt/app-root/bin
 COPY run-app.sh /opt/app-root/bin
 
 RUN chgrp -R 0 /opt/app-root && \
-    chmod -R g=u /opt/app-root
+    chmod -R g+rwX /opt/app-root
 
 EXPOSE 8080
 USER 1001
